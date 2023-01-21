@@ -23,7 +23,7 @@ let Products = [
     { name: 'sony', price: 1750 },
 ]
 
-console.table(Products);
+//console.table(Products);
 
 console.info("Products sorted by Name");
 
@@ -31,8 +31,8 @@ Products.sort(CompareBy('name'))
 
 console.table(Products);
 
-console.info("Products sorted by Price");
+//console.info("Products sorted by Price");
 
-Products.sort(CompareBy('price'))
+//Products.sort(CompareBy('price'))
 
-console.table(Products); 
+//console.table(Products); 
