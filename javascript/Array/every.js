@@ -1,5 +1,5 @@
 /**
- * every():Determining if All array Element is PASS a test.
+ * every():Determining if All array Element is passed a test.
  */
 
 let Numbers = [1, 2, 0, 4, 5, 6, 7, 8, 9];
