@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="cl1">Clicked The Button</p>
+    <br />
+    <button type="button" onclick="clickEvent()">Click Me</button>
+
+    <br />
+    <p id="cl2">Clicked MySelf</p>
+    <br />
+
+    <button onclick="getElementById('cl3').innerHTML=Date()">Date</button>
+    <p id="cl3"></p>
+    <br />
+
+    <button onclick="changeColor(this,'Tomato');">Change Color</button>
+    <br />
+    <p>Value 1:<input type='text' id="v1" value="Debasish" /> </p>
+    <p>Value 2:<input type='text' id="v2" /> </p>
+    <button type="button" id="btn">COPY</button>
+    <br />
+
+
+
+</body>
+<script src="./onClickEvents.js"></script>
+
+</html>

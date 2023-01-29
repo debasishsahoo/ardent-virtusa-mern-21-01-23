@@ -40,3 +40,9 @@ function changeText() {
 //method
 //! element.setAttribute(attribute,value) 
 
+
+
+//! Common HTML Events:
+//ToDo: onchange,onclick,onmouseover,onmouseout,onkeydown,onload
+
+
