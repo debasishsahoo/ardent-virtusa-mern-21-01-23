@@ -7,7 +7,7 @@ function showValue(value) {
 }
 
 
-document.getElementById('dept').addEventListener('onchange', () => {
+document.getElementById('dept').addEventListener('change', () => {
     let val = document.getElementById('dept').value;
     alert('Selected Value:' + val);
 });
