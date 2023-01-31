@@ -1,0 +1,1 @@
+javascript module is woking with only HTTP(s) protocol.
