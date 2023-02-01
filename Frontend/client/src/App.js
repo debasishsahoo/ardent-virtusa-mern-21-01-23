@@ -3,6 +3,7 @@ import Card1 from './components/Card1'
 import Crad2 from './components/Card2'
 import Student from './ClassComponents/Student.class'
 import Teacher from './FunctionComponents/Teacher.function'
+import JsxComponent from './jsx/NormalJSX';
 
 
 function App() {
@@ -76,10 +77,17 @@ function App() {
     //   </div>
 
     // </>
+
+
+
+    // <>
+    //   <Student />
+    //   <br />
+    //   <Teacher />
+    // </>
+
     <>
-      <Student />
-      <br />
-      <Teacher />
+      <JsxComponent />
     </>
 
   );
