@@ -4,6 +4,7 @@ import Crad2 from './components/Card2'
 import Student from './ClassComponents/Student.class'
 import Teacher from './FunctionComponents/Teacher.function'
 import JsxComponent from './jsx/NormalJSX';
+import NonJsxComponent from './jsx/NonJSX'
 
 
 function App() {
@@ -88,6 +89,8 @@ function App() {
 
     <>
       <JsxComponent />
+      <br />
+      <NonJsxComponent />
     </>
 
   );
