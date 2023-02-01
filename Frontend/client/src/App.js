@@ -1,15 +1,13 @@
 import React from 'react';
-import Header from './components/header/header'
-import Main from './components/main/main'
-import Footer from './components/footer/footer'
+import Card1 from './components/Card1'
+
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <Card1 />
     </>
+
   );
 }
 
