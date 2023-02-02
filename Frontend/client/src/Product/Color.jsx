@@ -1,13 +1,14 @@
 import React from 'react';
 
 function Color(props) {
+    const ListOfColors = props.colors.map((color, index) => {
+        return <li key={index} className={color}></li>
+    });
     return (
         <React.Fragment>
             <ul>
                 <li>COLOR</li>
-                <li className="yellow"></li>
-                <li className="black"></li>
-                <li className="blue"></li>
+                {ListOfColors}
             </ul>
         </React.Fragment>
     );

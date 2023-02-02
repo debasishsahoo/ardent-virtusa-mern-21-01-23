@@ -119,6 +119,15 @@ ul li {
   border: 2px solid rgba(0, 0, 0, 0);
   transition: 0.3s all ease;
 }
+.red {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #f92606;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.3s all ease;
+}
 
 .black {
   content: "";
@@ -144,6 +153,14 @@ ul li {
 .black:hover,
 .blue:hover {
   border: 2px solid #f76b39;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red:hover {
+  border: 2px solid #21c3efe0;
   width: 13px;
   height: 13px;
   border-radius: 50%;
