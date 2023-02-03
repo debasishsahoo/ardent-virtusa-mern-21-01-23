@@ -9,6 +9,9 @@ import PropsSpread from './Props/PropsSpread'
 import Parent from './Relationship/Parent';
 import Product from './Product/Product'
 
+import InValidProps from './Validation/InValidProps'
+import ValidProps from './Validation/ValidProps'
+
 function App() {
   const randomvalue = 34;
 
@@ -67,7 +70,14 @@ function App() {
     //   <PropsSpread a={obj.a} b={obj.b} c={obj.c} />
 
     // </>
-    <Product />
+
+
+
+    // <Product />
+
+    // <InValidProps />
+
+    <ValidProps />
 
 
   );
