@@ -14,6 +14,14 @@ import ValidProps from './Validation/ValidProps'
 
 import AllPropsValidation from './Validation/AllPropsValidation'
 
+
+
+
+import Card from './State/Card'
+import CounterComponent from './State/CounterComponent'
+import Toggle from './State/ToggleComponent'
+
+
 function App() {
   const randomvalue = 34;
 
@@ -81,7 +89,12 @@ function App() {
 
     // <ValidProps />
 
-    <AllPropsValidation />
+    //<AllPropsValidation />
+
+    //< Card />
+
+    //<CounterComponent />
+    <Toggle />
 
 
   );
