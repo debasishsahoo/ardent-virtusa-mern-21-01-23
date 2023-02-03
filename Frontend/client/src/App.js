@@ -12,6 +12,8 @@ import Product from './Product/Product'
 import InValidProps from './Validation/InValidProps'
 import ValidProps from './Validation/ValidProps'
 
+import AllPropsValidation from './Validation/AllPropsValidation'
+
 function App() {
   const randomvalue = 34;
 
@@ -73,11 +75,13 @@ function App() {
 
 
 
-    <Product />
+    // <Product />
 
     // <InValidProps />
 
     // <ValidProps />
+
+    <AllPropsValidation />
 
 
   );
