@@ -17,8 +17,15 @@ function Info(props) {
                     rackprice={2500}
                     mainprice={1750}
                 />
-                <Size sizes={[7, 8, 'x', 'a', 11, 12]} />
-                <Color colors={['yellow', 'black', 'blue', 'red']} />
+
+                <Size />
+                <Color />
+
+
+                {/* <Size sizes={[7, 8, 'x', 'a', 11, 12]} />
+
+                <Color colors={['yellow', 'black', 'blue', 'red']} /> */}
+
                 <Button />
             </div>
         </React.Fragment>

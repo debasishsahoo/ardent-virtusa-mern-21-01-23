@@ -37,6 +37,7 @@ function validationType(...validators) {
             if (typeof validator === 'function') {
 
                 const result = validator(value)
+
                 return typeof result === 'boolean' && result;
             }
 
@@ -46,14 +47,9 @@ function validationType(...validators) {
 
         if (!valid) {
             return new Error(
-                `Invalid Props:${propName} send to Component:${componentName}. Validation Failed`
+                `Invalid   Props:${propName}   send to  Component:${componentName}. Validation Failed`
             )
         }
-
-
-
-
-
 
     });
 }

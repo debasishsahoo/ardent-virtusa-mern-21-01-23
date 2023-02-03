@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-function Size(props) {
-    const ListOfSize = props.sizes.map((size, index) => {
+function Size({ sizes }) {
+    const ListOfSize = sizes.map((size, index) => {
         return <li className="bg" key={index}>{size}</li>
     })
 
@@ -14,5 +15,16 @@ function Size(props) {
         </React.Fragment>
     );
 }
+
+
+
+Size.defaultProps = {
+    sizes: [0, 0, 0, 0, 0]
+}
+
+Size.propTypes = {
+    sizes: PropTypes.arrayOf(PropTypes.number).isRequired
+}
+
 
 export default Size;

@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-function Color(props) {
-    const ListOfColors = props.colors.map((color, index) => {
+function Color({ colors }) {
+    const ListOfColors = colors.map((color, index) => {
         return <li key={index} className={color}></li>
     });
     return (
@@ -13,5 +14,14 @@ function Color(props) {
         </React.Fragment>
     );
 }
+
+Color.defaultProps = {
+    colors: ['color', 'color', 'color']
+}
+
+Color.propTypes = {
+    colors: PropTypes.arrayOf(PropTypes.string).isRequired
+}
+
 
 export default Color;

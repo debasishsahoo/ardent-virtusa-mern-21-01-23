@@ -73,11 +73,11 @@ function App() {
 
 
 
-    // <Product />
+    <Product />
 
     // <InValidProps />
 
-    <ValidProps />
+    // <ValidProps />
 
 
   );

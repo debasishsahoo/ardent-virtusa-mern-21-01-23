@@ -149,6 +149,18 @@ ul li {
   transition: 0.3s all ease;
 }
 
+
+.color {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #28f209;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.3s all ease;
+}
+
+
 .yellow:hover,
 .black:hover,
 .blue:hover {
