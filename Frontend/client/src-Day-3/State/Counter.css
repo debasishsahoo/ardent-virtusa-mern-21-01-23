@@ -1,0 +1,59 @@
+/*apply css properties to body tag*/
+
+body {
+	position: absolute;
+	left: 0%;
+	text-align: center;
+}
+
+/*apply css properties to container class*/
+
+.container {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	text-align: center;
+}
+
+/*apply css properties to button tag*/
+
+button {
+	background-color: #2a3bd0; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+/*apply hover effect to button tag*/
+
+.button1:hover {
+	background-color: rgba(10, 170, 34, 0.829);
+	color: grey;
+}
+.button2:hover {
+	background-color: rgb(212, 11, 115);
+	color: grey;
+}
+/*apply css properties to h2 tag*/
+
+h2 {
+	color: black;
+	margin: 0 50px;
+	font-size: 45px;
+}
+
+/*apply css properties to h1 tag*/
+
+h1 {
+	font-size: 35px;
+	color: rgb(8, 113, 232);
+	text-align: center;
+	padding-left: 10%;
+}
