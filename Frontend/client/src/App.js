@@ -7,6 +7,7 @@ import LifeCycleConstructor from './ClassComponentAll/Constructor/LifeCycleConst
 import LifeCycleDerivedState from './ClassComponentAll/getDrivedStateFromProps/LifeCycleDerivedState'
 import LYComponentDidMount from './ClassComponentAll/ComponentDidMount/LYCompnentDidMount'
 import LyShouldComponentUpdate from './ClassComponentAll/ShouldComponentUpdate/LyShouldComponentUpdate'
+import LyComponentDidUpdate from './ClassComponentAll/componentDidUpdate/LYComponentDidUpdate'
 function App() {
   return (
     <>
@@ -21,7 +22,8 @@ function App() {
       {/* <LifeCycleDerivedState col='yellow' /> */}
 
       {/* <LYComponentDidMount /> */}
-      <LyShouldComponentUpdate />
+      {/* <LyShouldComponentUpdate /> */}
+      <LyComponentDidUpdate />
     </>
   );
 }

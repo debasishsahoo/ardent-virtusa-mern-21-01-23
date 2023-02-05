@@ -1,5 +1,6 @@
 import React from "react";
 
+
 class LYComponentDidMount extends React.Component {
     constructor(props) {
         console.log('constructor')
@@ -14,7 +15,12 @@ class LYComponentDidMount extends React.Component {
     }
     render() {
         console.log('render')
-        return (<h1>Favorate Color is {this.state.color}</h1>)
+        return (
+            <div>
+                <h1>Favorate Color is {this.state.color}</h1>
+               
+            </div>
+        )
     }
 
 }
