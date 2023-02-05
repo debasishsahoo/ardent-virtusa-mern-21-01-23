@@ -13,11 +13,13 @@ class Demo extends React.Component {
             this.setState({ who: 'Debasish' })
         }
     }
+
+
     render() {
         console.log('From Demo render')
         return (
             <div>
-                <h1>From Demo{this.state.who}</h1>
+                <h1>From Demo {this.state.who} </h1>
                 <button onClick={() => { this.setState({ active: 'yes' }) }}>Activated</button>
             </div>
         )

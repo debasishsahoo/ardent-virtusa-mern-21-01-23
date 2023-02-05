@@ -11,12 +11,13 @@ class LyComponentDidUpdate extends React.Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({ color: 'blue' })
-        }, 5000)
+        }, 10000)
     }
 
     componentDidUpdate() {
         document.getElementById("mydiv").innerHTML = "The Update Color is" + this.state.color;
     }
+
 
     render() {
         return (

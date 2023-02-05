@@ -8,6 +8,8 @@ import LifeCycleDerivedState from './ClassComponentAll/getDrivedStateFromProps/L
 import LYComponentDidMount from './ClassComponentAll/ComponentDidMount/LYCompnentDidMount'
 import LyShouldComponentUpdate from './ClassComponentAll/ShouldComponentUpdate/LyShouldComponentUpdate'
 import LyComponentDidUpdate from './ClassComponentAll/componentDidUpdate/LYComponentDidUpdate'
+
+import LyDidCatch from './ClassComponentAll/DidCatch/LyDidCatch'
 function App() {
   return (
     <>
@@ -23,7 +25,8 @@ function App() {
 
       {/* <LYComponentDidMount /> */}
       {/* <LyShouldComponentUpdate /> */}
-      <LyComponentDidUpdate />
+      {/* <LyComponentDidUpdate /> */}
+      <LyDidCatch />
     </>
   );
 }
