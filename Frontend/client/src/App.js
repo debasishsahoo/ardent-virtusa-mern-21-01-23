@@ -6,6 +6,7 @@ import Garage from './Cond1/LogicalANDOpr'
 import SwitchCase from './Cond1/SwitchCase';
 import CondEnum from './Cond1/CondEnum';
 import PackingList from './Cond2/PackingList';
+import Auth from './Cond2/StatefullComponent'
 
 
 
@@ -21,7 +22,9 @@ function App() {
 
       {/* <SwitchCase role={'User'} / > */}
       {/* <CondEnum state={'abc'} /> */}
-      <PackingList />
+
+      {/* <PackingList /> */}
+      <Auth />
 
 
 
