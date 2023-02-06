@@ -7,6 +7,7 @@ import SwitchCase from './Cond1/SwitchCase';
 import CondEnum from './Cond1/CondEnum';
 import PackingList from './Cond2/PackingList';
 import Auth from './Cond2/StatefullComponent'
+import Tweet from './Cond3/Tweet';
 
 
 
@@ -24,7 +25,9 @@ function App() {
       {/* <CondEnum state={'abc'} /> */}
 
       {/* <PackingList /> */}
-      <Auth />
+
+      {/* <Auth /> */}
+      <Tweet />
 
 
 
