@@ -2,6 +2,9 @@ import React from 'react';
 //IF Condition
 import If_Statement from './Cond1/if_Statement';
 import DemoAuth from './Cond1/DemoAuth';
+import Garage from './Cond1/LogicalANDOpr'
+import SwitchCase from './Cond1/SwitchCase';
+import CondEnum from './Cond1/CondEnum';
 
 
 
@@ -11,7 +14,16 @@ function App() {
   return (
     <>
       {/* <If_Statement isGreeting={false} /> */}
-      <DemoAuth isloggedin={false} />
+      {/* <DemoAuth isloggedin={false} /> */}
+
+      {/* <Garage car={['BMW', "AUDI"]} />*/}
+
+      {/* <SwitchCase role={'User'} / > */}
+
+      <CondEnum state={'logout'} />
+
+
+
     </>
   );
 }
