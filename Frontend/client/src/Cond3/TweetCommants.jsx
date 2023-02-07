@@ -47,28 +47,55 @@ import React from "react";
 // }
 
 //! Using JSX
-let Error = <span className="error">There was an Error,Please Fix</span>
+// let Error = <span className="error">There was an Error,Please Fix</span>
+
+// const TweetComments = (props) => {
+//     if (props.comments.length === 0) {
+//         return (
+//             <div className="tweet-comments">
+//                 {Error}
+//                 <div className="tweet-count">
+//                     There are {props.comments.length} comments{" "}
+//                 </div>
+//             </div>
+//         )
+//     }
+//     return (
+//         <div className="tweet-comments">
+//             <div className="tweet-count">
+//                 There are {props.comments.length} comments{" "}
+//             </div>
+//             <TweetList comments={props.comments} />
+//         </div>
+//     )
+// }
+
+
+//! Ternary Operator
 
 const TweetComments = (props) => {
+    const [Show, setShow] = React.useState(false);
+    console.log(Show)
     if (props.comments.length === 0) {
-        return (
-            <div className="tweet-comments">
-                {Error}
-                <div className="tweet-count">
-                    There are {props.comments.length} comments{" "}
-                </div>
-            </div>
-        )
+        return null
     }
     return (
         <div className="tweet-comments">
             <div className="tweet-count">
                 There are {props.comments.length} comments{" "}
+                <button
+                    onClick={() => setShow(!Show)}>{Show ? "Hide" : "Show"}</button>
             </div>
-            <TweetList comments={props.comments} />
+            {
+                Show ? <TweetList comments={props.comments} /> : null
+            }
+
         </div>
     )
 }
+
+
+
 
 
 
