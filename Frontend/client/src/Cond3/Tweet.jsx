@@ -1,7 +1,7 @@
 import './main.css'
 import TweetHeader from './TweetHeader';
 import TweetBody from './TweetBody';
-import TweetComment from './TweetCommants';
+import TweetComments from './TweetCommants';
 
 const comments = [
     {
@@ -56,7 +56,7 @@ const Tweet = () => {
         <div className="tweet">
             <TweetHeader />
             <TweetBody />
-            <TweetComment comments={comments} />
+            <TweetComments comments={comments} />
         </div>
     )
 
