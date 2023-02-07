@@ -1,6 +1,65 @@
 import React from "react";
 
+//! Without Cond...
+// const TweetComments = (props) => {
+//     return (
+//         <div className="tweet-comments">
+
+//             <div className="tweet-count">
+//                 There are {props.comments.length} comments{" "}
+//             </div>
+//             <TweetList comments={props.comments} />
+//         </div>
+//     )
+// }
+
+//!if-else
+// const TweetComments = (props) => {
+//     if (props.comments.length === 0) {
+//         return <div className="tweet-count">No Comments ...</div>
+//     } else {
+//         return (
+//             <div className="tweet-comments">
+
+//                 <div className="tweet-count">
+//                     There are {props.comments.length} comments{" "}
+//                 </div>
+//                 <TweetList comments={props.comments} />
+//             </div>
+//         )
+//     }
+// }
+
+
+//!null & Gurd cluse
+// const TweetComments = (props) => {
+//     if (props.comments.length === 0) {
+//         return null
+//     }
+//     return (
+//         <div className="tweet-comments">
+//             <div className="tweet-count">
+//                 There are {props.comments.length} comments{" "}
+//             </div>
+//             <TweetList comments={props.comments} />
+//         </div>
+//     )
+// }
+
+//! Using JSX
+let Error = <span className="error">There was an Error,Please Fix</span>
+
 const TweetComments = (props) => {
+    if (props.comments.length === 0) {
+        return (
+            <div className="tweet-comments">
+                {Error}
+                <div className="tweet-count">
+                    There are {props.comments.length} comments{" "}
+                </div>
+            </div>
+        )
+    }
     return (
         <div className="tweet-comments">
             <div className="tweet-count">
@@ -9,8 +68,15 @@ const TweetComments = (props) => {
             <TweetList comments={props.comments} />
         </div>
     )
-
 }
+
+
+
+
+
+
+
+
 
 
 // const TweetList = ({ comments }) => {
