@@ -1,6 +1,7 @@
 import React from 'react';
 import List1, { List2, Blog, SubList, OtherMap } from './DataMap/List'
-
+import CorrectNameList from './DataMap/Sol1'
+import MainApp from './DataMap/Sol2'
 function App() {
   const NameList = ['Anjani', 'Debasish', 'Azim', 'Sourav']
 
@@ -31,6 +32,10 @@ function App() {
       <SubList Data={posts} />
       <br />
       <OtherMap data={people} />
+      <br />
+      <CorrectNameList myLists={NameList} />
+      <br />
+      <MainApp data={people} />
     </>
   );
 }

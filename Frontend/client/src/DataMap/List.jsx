@@ -78,19 +78,15 @@ export function Blog(props) {
 function ListItem(props) {
     const item = props.item;
     console.log(item);
-    return (
-        <li key={item}>{item}</li>
-    )
+
+    return (<li key={item}>{item}</li>)
 }
 
 export function SubList(props) {
     const MyList = props.Data;
-
     const ListItems = MyList.map((element) => {
-        //console.log(element);
         <ListItem item={element} />
     });
-
     return (
         <div>
             <h2>Incorrect Key Example</h2>
@@ -103,9 +99,17 @@ export function SubList(props) {
 
 
 
+
+
+
+
+
+
+
+
 const People = ({ firstname, lastname }) => {
     <div>
-        {firstname}{lastname}
+        {firstname} {lastname}
     </div>
 }
 
@@ -114,7 +118,7 @@ export function OtherMap(props) {
     return (
         <div>
             <>
-            <h1>People Data</h1>
+                <h1>People Data</h1>
                 {peopleList.map((p, i) => { <People {...p} key={i} /> })}
             </>
 
