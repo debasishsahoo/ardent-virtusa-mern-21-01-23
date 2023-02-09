@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 
 function Problam3(props) {
     const user = {
-        username: 'dev',
-        password: '12345'
+        username: '',
+        password: ''
     }
 
     const [Data, setData] = useState(user)
+    const [form, setform] = useState(user)
+    const [submit, submitted] = useState(false)
 
     //console.log(Data.username)
 
@@ -22,15 +24,23 @@ function Problam3(props) {
     }
 
     const PrintValue = (e) => {
+        console.log(e)
+        e.PreventDefault();
+        setform({
+            username: Data.username,
+            password: Data.password
+        });
+        //submitted(true)
 
-     }
+
+    }
 
 
 
 
     return (
         <div>
-            <form>
+            <form onSubmit={PrintValue}>
                 <label>UserName:
                     <input
                         type='text'
@@ -50,6 +60,9 @@ function Problam3(props) {
                 <br />
                 <button>Submit</button>
             </form>
+            <br />
+            <p>{submit ? form.username : null}</p>
+            <p>{submit ? form.password : null}</p>
 
         </div>
     );
