@@ -9,6 +9,7 @@ import UseStateHooks2 from './Hooks/UseStateHooks/Example2'
 import UseStateHooks3 from './Hooks/UseStateHooks/Example3'
 import Problam1 from './Hooks/UseStateHooks/Problam1'
 import Problam2 from './Hooks/UseStateHooks/Problam2'
+import Problam3 from './Hooks/UseStateHooks/Problam3'
 function App() {
   return (
     // <>
@@ -28,7 +29,9 @@ function App() {
 
       {/* <Problam1 /> */}
 
-      <Problam2 />
+      {/* <Problam2 /> */}
+
+      <Problam3 />
     </>
   );
 }
