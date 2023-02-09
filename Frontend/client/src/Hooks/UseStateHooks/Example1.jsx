@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react"
 
-function DemoHooks(props) {
+function UseStateHooks1(props) {
 
     // ![Variable,hooksfunction]
     const [Color, setColor] = useState('red')
@@ -44,4 +44,4 @@ function DemoHooks(props) {
     );
 }
 
-export default DemoHooks;
+export default UseStateHooks1;
