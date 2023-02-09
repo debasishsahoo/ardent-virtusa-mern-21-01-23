@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 function Problam3(props) {
     const user = {
-        username: '',
-        password: ''
+        username: 'dev',
+        password: '1234'
     }
 
     const [Data, setData] = useState(user)
@@ -13,6 +13,10 @@ function Problam3(props) {
     //console.log(Data.username)
 
     const UpdateFiled = (e) => {
+        //console.log(e)
+        console.log(e.target)
+        console.log(e.target.name)
+        console.log(e.target.value)
 
         //console.log('Name:',e.target.name)
         //console.log('Value:',e.target.value)
@@ -24,46 +28,63 @@ function Problam3(props) {
     }
 
     const PrintValue = (e) => {
-        console.log(e)
-        e.PreventDefault();
+        e.preventDefault();
         setform({
             username: Data.username,
             password: Data.password
         });
-        //submitted(true)
+        submitted(true)
 
 
     }
 
 
-
+    const [msg, setMsg] = useState('')
 
     return (
         <div>
-            <form onSubmit={PrintValue}>
-                <label>UserName:
-                    <input
-                        type='text'
-                        value={Data.username}
-                        name="username"
-                        onChange={UpdateFiled}
-                    /></label>
-                <br />
+            <div>
+                <form onSubmit={PrintValue}>
+                    <label>UserName:
+                        <input
+                            type='text'
+                            value={Data.username}
+                            name="username"
+                            onChange={UpdateFiled}
+                        /></label>
+                    <br />
 
-                <label>Password:
-                    <input
-                        type='password'
-                        value={Data.password}
-                        name="password"
-                        onChange={UpdateFiled}
-                    /></label>
+                    <label>Password:
+                        <input
+                            type='password'
+                            value={Data.password}
+                            name="password"
+                            onChange={UpdateFiled}
+                        /></label>
+                    <br />
+                    <button>Submit</button>
+                </form>
                 <br />
-                <button>Submit</button>
-            </form>
-            <br />
-            <p>{submit ? form.username : null}</p>
-            <p>{submit ? form.password : null}</p>
+                <p>{submit ? form.username : null}</p>
+                <p>{form.password}</p>
+            </div>
+            <div>
+                <input
+                    type='text'
+                    value={msg}
+                    placeholder='Enter Something......'
+                    onChange={
+                        e => {
+                            const val = e.target.value;
+                            setMsg(prev => prev + val)
+                        }
+                    }
+                />
+                <br />
+                <p>{msg}</p>
 
+
+            </div>
         </div>
     );
 }
