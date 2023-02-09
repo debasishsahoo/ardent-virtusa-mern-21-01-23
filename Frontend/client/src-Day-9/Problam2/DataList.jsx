@@ -17,3 +17,13 @@ const List = [
 
 //! please Implement map function and Show the Data on frontend proptype also
 const nestedList = [List, List]
+
+
+
+const NestedList = () => {
+    console.log(nestedList);
+    return 0;
+
+}
+
+export default NestedList

@@ -3,6 +3,7 @@ import SetState from './ComponentApi/SetState'
 import ForceUpdate from './ComponentApi/ForceUpdate'
 import FindDOM from './ComponentApi/FindDomNode'
 import DemoHooks from './Hooks/DemoHooks';
+import NestedList from './Problam2/DataList.jsx'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
     //   <FindDOM />
     // </>
     <>
-      <DemoHooks />
+      {/* <DemoHooks /> */}
+      {/* <NestedList /> */}
     </>
   );
 }
