@@ -6,11 +6,11 @@ export default function Example3() {
     const [count2, setCount2] = useState(0);
 
     useEffect(() => {
-        console.log('You have Click on Bytton 1')
+        console.log('You have Click on Button 1')
     }, [count1]);
 
     useEffect(() => {
-        console.log('You have Click on Bytton 1')
+        console.log('You have Click on Button 1')
     }, [count2]);
 
 
