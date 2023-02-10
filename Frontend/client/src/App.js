@@ -11,6 +11,8 @@ import React from 'react';
 // import Problam2 from './Hooks/UseStateHooks/Problam2'
 // import Problam3 from './Hooks/UseStateHooks/Problam3'
 import UseEffectHooks1 from './Hooks/UseEffectHooks/Example1'
+import UseEffectHooks2 from './Hooks/UseEffectHooks/Example2'
+import UseEffectHooks3 from './Hooks/UseEffectHooks/Example3'
 function App() {
   return (
     // <>
@@ -30,7 +32,9 @@ function App() {
       {/* <Problam2 /> */}
       {/* <Problam3 /> */}
 
-      <UseEffectHooks1 />
+      {/* <UseEffectHooks1 /> */}
+      <UseEffectHooks2 />
+
     </>
   );
 }
