@@ -4,20 +4,13 @@ export default function Example1() {
 
     const [count, setCount] = useState(0);
 
-    //! This code Run Every Render with component 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setCount((count) => count + 1)
-    //     }, 1000)
-    // })
-
-    //! This code ONES after First Render with component 
     useEffect(() => {
-        setTimeout(() => {
+        let timer = setTimeout(() => {
             setCount((count) => count + 1)
-        }, 1000)
-    }, [])
+        }, 1000);
 
+        return () => clearTimeout(timer)
+    }, [])
 
 
 

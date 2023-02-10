@@ -14,7 +14,12 @@ import React from 'react';
 
 //import UseEffectHooks1 from './Hooks/UseEffectHooks/Example1'
 //import UseEffectHooks2 from './Hooks/UseEffectHooks/Example2'
-import UseEffectHooks3 from './Hooks/UseEffectHooks/Example3'
+//import UseEffectHooks3 from './Hooks/UseEffectHooks/Example3'
+//import UseEffectHooks4 from './Hooks/UseEffectHooks/Example4'
+//import Problam1 from './Hooks/UseEffectHooks/Problam1'
+
+import UserList from './Hooks/UseEffectHooks/FeatchData/GetUserData'
+
 function App() {
   return (
     // <>
@@ -36,7 +41,12 @@ function App() {
 
       {/* <UseEffectHooks1 /> */}
       {/* <UseEffectHooks2 /> */}
-      <UseEffectHooks3 />
+      {/* <UseEffectHooks3 /> */}
+      {/* <UseEffectHooks4 /> */}
+
+      {/* <Problam1 /> */}
+
+      <UserList />
 
     </>
   );
