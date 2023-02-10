@@ -18,8 +18,10 @@ import React from 'react';
 //import UseEffectHooks4 from './Hooks/UseEffectHooks/Example4'
 //import Problam1 from './Hooks/UseEffectHooks/Problam1'
 
-import UserList from './Hooks/UseEffectHooks/FeatchData/GetUserData'
-import PostList from './Hooks/UseEffectHooks/SendRecivedData/Todo'
+//import UserList from './Hooks/UseEffectHooks/FeatchData/GetUserData'
+//  ------------------ import PostList from './Hooks/UseEffectHooks/SendRecivedData/Todo'
+
+import Example1 from './Hooks/UseRefHooks/Example1'
 
 function App() {
   return (
@@ -48,7 +50,9 @@ function App() {
       {/* <Problam1 /> */}
 
       {/* <UserList /> */}
-      <PostList />
+      {/* <PostList /> */}
+
+      <Example1 />
 
     </>
   );

@@ -7,6 +7,8 @@ export default function User() {
     const { data } = UserFetchData(url)
     return (
         <React.Fragment>
+
+            
             <table border={1}>
                 <thead>
                     <tr>
