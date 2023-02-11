@@ -25,9 +25,12 @@ import React from 'react';
 
 
 
-import Example1 from './Hooks/UseRefHooks/Example1'
-import Example2 from './Hooks/UseRefHooks/Example2'
-import Example3 from './Hooks/UseRefHooks/Example3'
+// import Example1 from './Hooks/UseRefHooks/Example1'
+// import Example2 from './Hooks/UseRefHooks/Example2'
+// import Example3 from './Hooks/UseRefHooks/Example3'
+
+
+import DisplayBooks from './Hooks/UseContext/CurrencyProblam/DisplayBooks'
 
 function App() {
   return (
@@ -60,8 +63,9 @@ function App() {
 
       {/* <Example1 /> */}
       {/* <Example2 /> */}
+      {/* <Example3 /> */}
 
-      <Example3 />
+      <DisplayBooks />
     </>
   );
 }
