@@ -20,6 +20,7 @@ import React from 'react';
 
 //import UserList from './Hooks/UseEffectHooks/FeatchData/GetUserData'
 //  ------------------ import PostList from './Hooks/UseEffectHooks/SendRecivedData/Todo'
+import PostList from './Hooks/UseEffectHooks/SendRecivedData/Todo'
 
 import Example1 from './Hooks/UseRefHooks/Example1'
 
@@ -50,9 +51,9 @@ function App() {
       {/* <Problam1 /> */}
 
       {/* <UserList /> */}
-      {/* <PostList /> */}
+      <PostList />
 
-      <Example1 />
+      {/* <Example1 /> */}
 
     </>
   );

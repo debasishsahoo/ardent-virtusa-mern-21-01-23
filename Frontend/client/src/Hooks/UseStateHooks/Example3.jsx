@@ -13,7 +13,7 @@ const UseStateHooks3 = () => {
     const [Student, setStudent] = useState(person);
 
     console.log(Student)
-   
+
 
 
     // const NameSet = useState('Debasish')
@@ -39,7 +39,6 @@ const UseStateHooks3 = () => {
             <p>I am <b>{Student.age}</b> Years Old {(Student.ismale) ? '👨' : '👧'}</p>
             <br />
             <button onClick={updateStudent}>Update Female</button>
-            //?
             <button onClick={updateStudent}>Update Male</button>
         </div>
     )

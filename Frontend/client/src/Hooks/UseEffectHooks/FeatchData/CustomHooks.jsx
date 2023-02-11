@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+
 function FetchData(url) {
     const [data, setData] = useState(null);
 
