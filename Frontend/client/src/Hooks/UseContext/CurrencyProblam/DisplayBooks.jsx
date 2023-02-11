@@ -1,15 +1,12 @@
-import React from 'react'
-import BookData from './BookData.js'
+import React, { useContext } from 'react'
+import BookData from './Data/BookData.js'
+import CurrencyContext from './Context/Currency-context.jsx'
 
 export default function DisplayBooks() {
+
+    const currency = useContext(CurrencyContext)
     return (
         <div>
-            {/* <ul>
-                {BookData.map((book, index) => (
-                    <li key={index}>{book.title}  - {book.price}</li>
-                ))}
-            </ul> */}
-
             <table border={1}>
                 <thead>
                     <tr>
@@ -23,7 +20,7 @@ export default function DisplayBooks() {
                         <tr key={index}>
                             <td>{book.id}</td>
                             <td>{book.title}</td>
-                            <td>{book.price}</td>
+                            <td>{currency} {book.price}</td>
                         </tr>
                     ))}
                 </tbody>
