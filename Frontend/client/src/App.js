@@ -4,6 +4,9 @@ import React from 'react';
 // import FindDOM from './ComponentApi/FindDomNode'
 // import DemoHooks from './Hooks/DemoHooks';
 // import NestedList from './Problam2/DataList.jsx'
+
+
+
 // import UseStateHooks1 from './Hooks/UseStateHooks/Example1'
 // import UseStateHooks2 from './Hooks/UseStateHooks/Example2'
 // import UseStateHooks3 from './Hooks/UseStateHooks/Example3'
@@ -17,12 +20,14 @@ import React from 'react';
 //import UseEffectHooks3 from './Hooks/UseEffectHooks/Example3'
 //import UseEffectHooks4 from './Hooks/UseEffectHooks/Example4'
 //import Problam1 from './Hooks/UseEffectHooks/Problam1'
-
 //import UserList from './Hooks/UseEffectHooks/FeatchData/GetUserData'
-//  ------------------ import PostList from './Hooks/UseEffectHooks/SendRecivedData/Todo'
-import PostList from './Hooks/UseEffectHooks/SendRecivedData/Todo'
+//import PostList from './Hooks/UseEffectHooks/SendRecivedData/Todo'
+
+
 
 import Example1 from './Hooks/UseRefHooks/Example1'
+import Example2 from './Hooks/UseRefHooks/Example2'
+import Example3 from './Hooks/UseRefHooks/Example3'
 
 function App() {
   return (
@@ -51,10 +56,12 @@ function App() {
       {/* <Problam1 /> */}
 
       {/* <UserList /> */}
-      <PostList />
+      {/* <PostList /> */}
 
       {/* <Example1 /> */}
+      {/* <Example2 /> */}
 
+      <Example3 />
     </>
   );
 }
