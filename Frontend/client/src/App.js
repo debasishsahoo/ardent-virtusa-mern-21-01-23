@@ -31,6 +31,7 @@ import React from 'react';
 
 
 import DisplayBooks from './Hooks/UseContext/CurrencyProblam/DisplayBooks'
+import PageBook from './Hooks/UseContext/CurrencyProblam/FullSoluction/PageComponents'
 
 function App() {
   return (
@@ -65,7 +66,8 @@ function App() {
       {/* <Example2 /> */}
       {/* <Example3 /> */}
 
-      <DisplayBooks />
+      {/* <DisplayBooks /> */}
+      <PageBook />
     </>
   );
 }

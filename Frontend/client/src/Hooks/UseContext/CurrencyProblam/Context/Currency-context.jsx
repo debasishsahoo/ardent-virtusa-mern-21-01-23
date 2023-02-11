@@ -1,5 +1,5 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext } from "react";
 
-const CurrencyContext = createContext('₹')
+const CurrencyContext = createContext(null)
 
 export default CurrencyContext
