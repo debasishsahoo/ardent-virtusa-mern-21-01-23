@@ -4,8 +4,9 @@ import Layout from './Components/Layout';
 import Home from './Components/Home'
 import About from './Components/About'
 import Contact from './Components/Contact'
-import Galary from './Components/Galary'
+import Gallary from './Components/Gallary'
 import ErrorPage from './Components/ErrorPage'
+import './App.css'
 
 function App() {
   return (
@@ -19,23 +20,57 @@ function App() {
     //   <Galary />
     // </React.Fragment>
 
+
+
+
+    //! in webbrowser 'http://localhost:3000' and 'http://localhost:3000/' both are same
+
+    //baseUrl : http://localhost:3000     path= /             Component: home
+    //baseUrl : http://localhost:3000     path= /home         Component: home
+    //baseUrl : http://localhost:3000     path= /about        Component: about
+    //baseUrl : http://localhost:3000     path= /contact      Component: contact
+    //baseUrl : http://localhost:3000     path= /gallary      Component: gallary
+
+
+
+    //! Basic Router
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path='/' element={<Home />} />
+    //     <Route path='/home' element={<Home />} />
+    //     <Route path='/about' element={<About />} />
+    //     <Route path='/contact' element={<Contact />} />
+    //     <Route path='/gallary' element={<Gallary />} />
+    //     <Route path='*' element={<ErrorPage />} />
+    //   </Routes>
+    // </BrowserRouter>
+
+    //! Menu Base Router
+
+    //! in react router for a single PATH('/') parent and child both can render
     <BrowserRouter>
       <Routes>
-        {/* <Route path='/' element={<Home />} /> */}
+        {/* parent router start */}
+        <Route path='/' element={<Layout />}>
+          {/* child router start */}
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/gallary' element={<Gallary />} />
+          <Route path='*' element={<ErrorPage />} />
+          {/* child router end */}
+        </Route>
+        {/* parent router end */}
 
 
-        <Route path='/' element={<Layout />} />
-        {/* <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path='Galary' element={<Galary />} /> */}
 
 
-        {/* Every time Error Route is called at the Last*/}
-        <Route path='*' element={<ErrorPage />} />
+
+
 
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter >
 
 
 
