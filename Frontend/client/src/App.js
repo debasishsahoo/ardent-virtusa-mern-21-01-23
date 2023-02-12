@@ -6,11 +6,35 @@ import About from './Components/About'
 import Contact from './Components/Contact'
 import Gallary from './Components/Gallary'
 import ErrorPage from './Components/ErrorPage'
+
+
 import Student from './Components/Student'
 
 
 import JEE from './Components/ChildComponents/JEE'
 import NEET from './Components/ChildComponents/NEET'
+
+
+import UserList from './Components/User/UserList'
+
+
+
+
+
+//! import Stu1 from './Components/Student' //Relitaev Path
+//! import Stu2 from '../src/Components/Student'
+//! import Stu3 from '../../client/src/Components/Student'
+//! import Stu4 from '/src/Components/Student'  //Abslute path
+
+
+
+
+
+
+
+
+
+
 import './App.css'
 
 function App() {
@@ -71,9 +95,15 @@ function App() {
 
             <Route index element={<JEE />} />
 
+            {/* http://localhost:3000/student/jee */}
+
             <Route path='jee' element={<JEE />} />
+
+            {/* http://localhost:3000/student/neet */}
             <Route path='neet' element={<NEET />} />
           </Route>
+
+          <Route path='userlist' element={<UserList />} />
 
 
 
@@ -99,3 +129,16 @@ function App() {
 }
 
 export default App;
+
+
+
+//   http://localhost:3000/student/neet
+
+//Baseurl :http://localhost:3000
+
+//path: /student
+
+//subpath: /neet
+
+
+{/* http://localhost:3000/student//jee */ } //! if we put ('/') in child root then yrl beocomes this

@@ -12,6 +12,7 @@ function Layout() {
                     <li><NavLink to='/contact'>Contact</NavLink></li>
                     <li><NavLink to='/gallary'>Gallary</NavLink></li>
                     <li><NavLink to='/student'>Student</NavLink></li>
+                    <li><NavLink to='/userlist'>User</NavLink></li>
                 </ul>
             </nav>
             <div>
