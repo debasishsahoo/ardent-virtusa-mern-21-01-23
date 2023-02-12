@@ -16,7 +16,8 @@ import NEET from './Components/ChildComponents/NEET'
 
 
 import UserList from './Components/User/UserList'
-
+import UserDatils from './Components/User/UserDatils';
+import Admin from './Components/User/admin'
 
 
 
@@ -79,45 +80,26 @@ function App() {
     //! in react router for a single PATH('/') parent and child both can render
     <BrowserRouter>
       <Routes>
-        {/* parent router start */}
         <Route path='/' element={<Layout />}>
-          {/* child router start */}
-
-          <Route index element={<Student />} />
-
+          <Route index element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/gallary' element={<Gallary />} />
-          {/* <Route path='/student' element={<Student />} /> */}
-
           <Route path='/student' element={<Student />}>
-
             <Route index element={<JEE />} />
-
-            {/* http://localhost:3000/student/jee */}
-
             <Route path='jee' element={<JEE />} />
-
-            {/* http://localhost:3000/student/neet */}
             <Route path='neet' element={<NEET />} />
           </Route>
 
-          <Route path='userlist' element={<UserList />} />
 
-
+          <Route path='userlist' element={<UserList />}>
+            <Route path=':userid' element={<UserDatils />} />
+            <Route path='admin' element={<Admin />} />
+          </Route>
 
           <Route path='*' element={<ErrorPage />} />
-          {/* child router end */}
         </Route>
-        {/* parent router end */}
-
-
-
-
-
-
-
       </Routes>
     </BrowserRouter >
 
